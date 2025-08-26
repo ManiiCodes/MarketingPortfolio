@@ -4,10 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sulemani Samuel – Marketing Portfolio</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Base Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+    body { line-height: 1.6; color: #333; background: #f4f7f9; }
+
+    /* Container */
+    .container { width: 90%; max-width: 1000px; margin: auto; padding: 60px 0; }
+
+    /* Header */
+    header { background: linear-gradient(135deg, #0077b6, #00b4d8); color: #fff; padding: 60px 0; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    header h1 { font-size: 3em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; margin-bottom: 20px; }
+    header nav { margin-top: 20px; }
+    header nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+    header nav a:hover { color: #ffd166; }
+
+    /* Section Headings */
+    section h2 { font-size: 2.5em; color: #0077b6; margin-bottom: 30px; text-align: center; position: relative; }
+    section h2::after { content: ''; display: block; width: 60px; height: 4px; background: #0077b6; margin: 10px auto 0; border-radius: 2px; }
+
+    /* Skills Section */
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .skill h3 { margin-bottom: 8px; font-size: 1.1em; color: #023e8a; }
+    .bar { background: #e0e0e0; border-radius: 20px; overflow: hidden; height: 20px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2); }
+    .bar div { height: 100%; background: #0077b6; border-radius: 20px; transition: width 1s ease-in-out; }
+
+    /* Projects Section */
+    .project { background: #fff; padding: 25px 30px; margin-bottom: 30px; border-left: 6px solid #0077b6; box-shadow: 0 6px 15px rgba(0,0,0,0.05); border-radius: 8px; transition: transform 0.3s, box-shadow 0.3s; }
+    .project:hover { transform: translateY(-5px); box-shadow: 0 12px 20px rgba(0,0,0,0.1); }
+    .project h3 { color: #023e8a; margin-bottom: 12px; }
+    .project ul { padding-left: 20px; margin-top: 10px; }
+    .project li { margin-bottom: 6px; line-height: 1.5; }
+
+    /* Contact Section */
+    section#contact p, section#contact a { text-align: center; display: block; margin: 10px 0; color: #0077b6; text-decoration: none; font-weight: 500; }
+    section#contact a:hover { color: #023e8a; text-decoration: underline; }
+
+    /* Footer */
+    footer { background: #023e8a; color: #fff; text-align: center; padding: 25px 0; font-size: 0.95em; }
+
+    /* Responsive Improvements */
+    @media(max-width: 768px){
+      header h1 { font-size: 2.2em; }
+      section h2 { font-size: 2em; }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <div class="container">
       <h1>Sulemani Samuel</h1>
@@ -60,10 +106,9 @@
     <div class="container">
       <h2>Projects</h2>
 
-      <!-- Project 1 -->
       <div class="project">
         <h3>Local Coffee Shop Instagram Campaign</h3>
-        <p>Created a 2-week Instagram campaign for a small local coffee shop. Developed graphics, captions, and hashtags targeting millennials and Gen Z. </p>
+        <p>Created a 2-week Instagram campaign for a small local coffee shop. Developed graphics, captions, and hashtags targeting millennials and Gen Z.</p>
         <ul>
           <li>Increased simulated engagement by <strong>28%</strong></li>
           <li>Designed 8 graphics using Canva and free stock images</li>
@@ -71,10 +116,9 @@
         </ul>
       </div>
 
-      <!-- Project 2 -->
       <div class="project">
         <h3>Email Marketing for Online Retailer</h3>
-        <p>Developed a 3-part email sequence promoting seasonal products for a simulated online retail store. Tracked engagement using Mailchimp mock analytics.</p>
+        <p>Developed a 3-part email sequence promoting seasonal products for a simulated online retail store.</p>
         <ul>
           <li>Simulated <strong>18% higher open rates</strong> by segmenting the audience</li>
           <li>Included mock product images and promotional banners</li>
@@ -82,7 +126,6 @@
         </ul>
       </div>
 
-      <!-- Project 3 -->
       <div class="project">
         <h3>Marketing Blog Content Creation</h3>
         <p>Built a personal marketing blog to analyze social media trends and case studies.</p>
@@ -93,7 +136,6 @@
         </ul>
       </div>
 
-      <!-- Project 4 -->
       <div class="project">
         <h3>SEO & Analytics Simulation</h3>
         <p>Conducted keyword research and on-page SEO optimization for a hypothetical small business website.</p>
@@ -103,6 +145,7 @@
           <li>Created a visual SEO scorecard to track improvements</li>
         </ul>
       </div>
+
     </div>
   </section>
 
@@ -120,5 +163,6 @@
       <p>&copy; 2025 Sulemani Samuel | Marketing Portfolio</p>
     </div>
   </footer>
+
 </body>
 </html>
