@@ -1,0 +1,18 @@
+/* Project Styling */
+.project {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 5px solid #0077b6;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+.project ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.project li {
+  margin-bottom: 5px;
+}
